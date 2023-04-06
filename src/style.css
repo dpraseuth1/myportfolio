@@ -3,9 +3,7 @@ body {
 }
 
 section {
-  height: 500px;
   background-color: white;
-  border: solid black 1px;
 }
 
 .hero {
@@ -16,8 +14,10 @@ section {
 }
 
 footer {
-  height: 500px;
   background-color: black;
+  color: white;
+  text-align: center;
+  padding: 80px;
 }
 
 nav {
@@ -52,6 +52,17 @@ p {
   font-weight: 300;
 }
 
+.about-paragraph {
+  color: #161616;
+  padding-bottom: 50px;
+}
+
+.sub-text {
+  font-size: 15px;
+  font-weight: 300;
+  color: #161616;
+}
+
 .hero-area {
   display: flex;
   height: 100%;
@@ -68,7 +79,7 @@ p {
   width: 200px;
   height: 55px;
   border-radius: 40px;
-  background-color: coral;
+  background-color: #2b8a3e;
   text-align: center;
   font-size: 30px;
   font-weight: 300;
@@ -77,7 +88,7 @@ p {
 }
 
 .button:hover {
-  background-color: #ef744b;
+  background-color: #2f9e44;
 }
 
 .button:active {
@@ -104,7 +115,69 @@ p {
   padding: 80px;
 }
 
+.sub-section-alt {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 80px;
+}
+
 .headshot {
   width: 300px;
   border-radius: 150px;
+  margin-left: 50px;
+}
+
+.headshot-container {
+  display: flex;
+  align-items: center;
+}
+
+.project-card {
+  height: 500px;
+  width: 300px;
+  box-shadow: 5px 5px 20px rgb(197, 195, 195);
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.project-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 1000px) {
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.project-img {
+  margin-top: 25px;
+  width: 250px;
+  border-radius: 125px;
+}
+
+hr {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.project-link {
+  text-decoration: none;
+  color: #2b8a3e;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.resume-link {
+  color: black;
 }

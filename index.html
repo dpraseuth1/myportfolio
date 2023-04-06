@@ -23,16 +23,16 @@
         /> -->
         <div>LOGO</div>
         <ul>
-          <li>About Me</li>
-          <li>Projects</li>
-          <li>Contact</li>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <div class="hero-area">
         <div class="hero-text">
           <h1>David Praseuth</h1>
           <p>Full Stack Developer</p>
-          <div class="button">About Me</div>
+          <div class="button"><a href="#about-me">About Me</a></div>
         </div>
         <div class="socials">
           <div>
@@ -72,22 +72,107 @@
         </div>
       </div>
     </section>
-    <section class="sub-section">
+    <section class="sub-section" id="about-me">
       <div class="information">
         <h2>About Me</h2>
-        <p>
+        <p class="about-paragraph">
           Hello, World. My name is David Praseuth. I am a Full Stack Software
           Developer with a passion for web development. When I am not learning
           code, I love to learn new cooking recipes.
         </p>
+        <p>Languages: HTML5, CSS3, JavaScript, C++</p>
+        <p>Skills & Tools: VS Code, XCode, Git, Github, Excel</p>
+        <p><a class="resume-link" href="">Click for Resume</a></p>
       </div>
       <div class="headshot-container">
-        <img class="headshot" src="src/images/portfolio-pic.jpg" alt="David
+        <img
+          class="headshot"
+          src="src/images/portfolio-pic.jpg"
+          alt="David
         Praseuth's headshot"
+        />
       </div>
     </section>
-    <section class="sub-section"></section>
-    <footer></footer>
+    <section class="sub-section-alt" id="projects">
+      <h2>Projects</h2>
+      <div class="project-container">
+        <div class="project-card">
+          <img
+            class="project-img"
+            src="src/images/Class-Roster.png"
+            alt="Project One Image"
+          />
+          <h3>Project One</h3>
+          <p class="sub-text">
+            This is my project and some text about it. Languages used:
+          </p>
+          <hr />
+          <p class="sub-text">
+            <a class="project-link" href="https://github.com/dpraseuth1"
+              >View Code</a
+            >
+          </p>
+        </div>
+        <div class="project-card">
+          <img
+            class="project-img"
+            src="src/images/Class-Roster.png"
+            alt="Project Two Image"
+          />
+          <h3>Class Roster</h3>
+          <p class="sub-text">
+            This is my project and some text about it. Language used: C++
+          </p>
+          <hr />
+          <p class="sub-text">
+            <a
+              class="project-link"
+              href="https://github.com/dpraseuth1/C867.git"
+              >View Code</a
+            >
+          </p>
+        </div>
+        <div class="project-card">
+          <img
+            class="project-img"
+            src="src/images/Class-Roster.png"
+            alt="Project Three Image"
+          />
+          <h3>Personal Portfolio</h3>
+          <p class="sub-text">
+            This is my project and some text about it. Languages used: HTML,
+            CSS, JavaScript
+          </p>
+          <hr />
+          <p class="sub-text">
+            <a class="project-link" href="https://github.com/dpraseuth1"
+              >View Code</a
+            >
+          </p>
+        </div>
+        <div class="project-card">
+          <img
+            class="project-img"
+            src="src/images/Class-Roster.png"
+            alt="Project Three Image"
+          />
+          <h3>Project Three</h3>
+          <p class="sub-text">
+            This is my project and some text about it. Languages used:
+          </p>
+          <hr />
+          <p class="sub-text">
+            <a class="project-link" href="https://github.com/dpraseuth1"
+              >View Code</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer id="contact">
+      <h2>Conact Me</h2>
+      <p>davidrpraseuth@gmail.com</p>
+    </footer>
     <script src="src/app.js"></script>
   </body>
 </html>
