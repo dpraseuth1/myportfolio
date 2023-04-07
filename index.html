@@ -7,10 +7,14 @@
     <link rel="stylesheet" href="src/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/7ac003e26d.js"
+      crossorigin="anonymous"
+    ></script>
+
     <title>David Praseuth</title>
   </head>
   <body>
@@ -21,12 +25,13 @@
           src="src/images/logo.png"
           alt="David Praseuth's logo"
         /> -->
-        <div>LOGO</div>
-        <ul>
+        <a href="https://www.dpraseuth.dev" class="logo">DP</a>
+        <ul id="nav-list">
           <li><a href="#about-me">About Me</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <button class="bars" id="bars"><i class="fas fa-bars"></i></button>
       </nav>
       <div class="hero-area">
         <div class="hero-text">
@@ -80,8 +85,8 @@
           Developer with a passion for web development. When I am not learning
           code, I love to learn new cooking recipes.
         </p>
-        <p>Languages: HTML5, CSS3, JavaScript, C++</p>
-        <p>Skills & Tools: VS Code, XCode, Git, Github, Excel</p>
+        <p><strong>Languages:</strong> HTML5, CSS3, JavaScript, C++</p>
+        <p><strong>Skills & Tools:</strong> VS Code, XCode, Git, Github, Excel</p>
         <p><a class="resume-link" href="">Click for Resume</a></p>
       </div>
       <div class="headshot-container">
@@ -170,8 +175,47 @@
       </div>
     </section>
     <footer id="contact">
-      <h2>Conact Me</h2>
-      <p>davidrpraseuth@gmail.com</p>
+      <h2>Contact Me</h2>
+      <div class="form-container">
+
+        <form
+        action="https://formsubmit.co/davidrpraseuth@gmail.com"
+        method="POST"
+      >
+      <input type="hidden" name="_subject" value="New submission!" />
+      <div class="contact-row">
+        <div class="input-group">
+        <input type="text" id="name" required>
+        <label for="name"><i class="fa-regular fa-user"></i> Your Name</label>
+      </div>
+      <div class="input-group">
+        <input type="text" id="number" required> 
+        <label for="number"><i class="fa-solid fa-phone-volume"></i> Phone #</label>
+      </div>
+
+      </div>
+      <div class="input-group">
+        <input type="email" id="email" required>
+        <label for="email"><i class="fa-regular fa-envelope"></i> Email Address</label>
+      </div>
+      
+      <div class="input-group">
+        <textarea id="message" rows="8" required></textarea>
+        <label for="message"><i class="fa-regular fa-comments"></i> Your Message</label>
+      </div>
+      <button class="submit-button" type="submit">SUBMIT<i class="fa-regular fa-paper-plane"></i></button>
+   
+        
+        <input
+          type="hidden"
+          name="_next"
+          value="https://dpraseuth.dev/pages/thankyou.html"
+        />
+        
+
+      </div>
+      
+      </form>
     </footer>
     <script src="src/app.js"></script>
   </body>
