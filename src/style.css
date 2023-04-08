@@ -13,17 +13,20 @@ section {
 }
 
 .hero {
-  background-color: #1c1d25;
+  /* background-color: #1c1d25; */
+  background-image: linear-gradient(to bottom right, rgb(3, 2, 82), rgb(38, 186, 212));
   height: 100vh;
   color: white;
   font-size: 40px;
 }
 
 footer {
-  background-color: black;
+  background-color: rgb(44, 44, 44);
   color: white;
   /* text-align: center; */
-  padding: 80px;
+  padding-top: 80px;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
 nav {
@@ -121,13 +124,21 @@ p {
   display: flex;
   justify-content: space-around;
   padding: 80px;
+  height: 100vh;
 }
 
 .sub-section-alt {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 80px;
+  padding-top: 40px;
+  padding-left: 80px;
+  padding-right: 80px;
+  height: 100vh;
+}
+
+.sub-section-alt h2 {
+  padding-bottom: 40px;
 }
 
 .headshot {
@@ -231,6 +242,7 @@ a {
   }
 }
 
+
 /* contact form */
 
 form {
@@ -305,4 +317,10 @@ textarea:valid~label
 
 .contact-row .input-group{
   flex-basis: 48%;
+}
+
+.footer-note {
+  font-size: 12px;
+  text-align: center;
+  padding-top: 80px;
 }
