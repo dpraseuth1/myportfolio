@@ -14,14 +14,15 @@ section {
 
 .hero {
   /* background-color: #1c1d25; */
-  background-image: linear-gradient(to bottom right, rgb(3, 2, 82), rgb(38, 186, 212));
+  background-image: linear-gradient(to bottom right, rgb(75, 213, 255), rgb(161, 252, 255));
   height: 100vh;
   color: white;
   font-size: 40px;
 }
 
 footer {
-  background-color: rgb(44, 44, 44);
+  /* background-color: rgb(153, 152, 152); */
+  background-image: linear-gradient(to bottom right, rgb(75, 213, 255), rgb(161, 252, 255));
   color: white;
   /* text-align: center; */
   padding-top: 80px;
@@ -124,7 +125,6 @@ p {
   display: flex;
   justify-content: space-around;
   padding: 80px;
-  height: 100vh;
 }
 
 .sub-section-alt {
@@ -134,7 +134,7 @@ p {
   padding-top: 40px;
   padding-left: 80px;
   padding-right: 80px;
-  height: 100vh;
+  padding-bottom: 80px;
 }
 
 .sub-section-alt h2 {
@@ -223,7 +223,7 @@ a {
 
   ul {
     display: none;
-    background-color: #2b2c38;
+    background-color: rgba(75, 21, 255, 0);
     margin: 0px;
   }
 
@@ -234,7 +234,7 @@ a {
   nav {
     display: flex;
     flex-direction: column-reverse;
-    background-color: #2b2c38;
+    background-color: rgba(75, 21, 255, 0);
   }
 
   .logo {
@@ -323,4 +323,62 @@ textarea:valid~label
   font-size: 12px;
   text-align: center;
   padding-top: 80px;
+  color: rgb(37, 37, 37)
 }
+
+/* night mode switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-right: 10px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+
+/* dark-mode styling */
+
