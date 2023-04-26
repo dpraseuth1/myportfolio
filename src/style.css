@@ -71,6 +71,9 @@ p {
   font-size: 15px;
   font-weight: 300;
   color: #161616;
+  padding-left: 5px;
+  padding-right: 5px;
+ 
 }
 
 .hero-area {
